@@ -132,7 +132,7 @@ Schrijf de data naar postgis ::
 
 Check of de data goed is geschreven (in relatie tot de herprojectie) ::
 
-	select distinct(st_srid(geometry)) from osm_new aeroways;
+	select distinct(st_srid(geometry)) from osm_new_aeroways;
 
 Als het goed is komt hier alleen 28992 uit. Zo niet, dan moet je iets herstellen zodat dit wel het geval wordt!
 
